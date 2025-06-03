@@ -28,11 +28,7 @@ const Header = () => {
               className="flex items-center gap-2 text-gray-900 dark:text-gray-100 hover:text-blue-600 dark:hover:text-blue-400 transition"
             >
               {menuItem.title}
-              <svg
-                className="w-3 h-3"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
+              <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M5.23 7.21a.75.75 0 011.06.02L10 11.584l3.71-4.354a.75.75 0 111.14.976l-4.25 5a.75.75 0 01-1.14 0l-4.25-5a.75.75 0 01.02-1.06z" />
               </svg>
             </button>
@@ -74,10 +70,10 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed left-0 top-0 z-50 w-full transition-all duration-300 ${
+      className={`fixed left-0 top-0 z-50 w-full transition-all duration-300 border-b ${
         stickyMenu
-          ? "bg-gray-100 shadow-md dark:bg-gray-900"
-          : "bg-gray-50 dark:bg-gray-800"
+          ? "bg-gray-100 shadow-md dark:bg-gray-900 border-gray-200 dark:border-gray-700"
+          : "bg-gray-50 dark:bg-gray-800 border-transparent"
       }`}
     >
       <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between relative">
@@ -90,8 +86,8 @@ const Header = () => {
           <span className="text-gray-900 dark:text-gray-100">Singh</span>
         </Link>
 
-        {/* Right Side (Hamburger + Menu) */}
-        <div className="flex items-center gap-4 ml-auto">
+        {/* Right side (Hamburger & Menu) */}
+        <div className="flex items-center gap-4 ml-auto pr-2 xl:pr-0">
           {/* Hamburger Icon */}
           <button
             aria-label="Toggle Navigation"
@@ -99,20 +95,20 @@ const Header = () => {
             onClick={() => setNavigationOpen(!navigationOpen)}
           >
             <span
-              className={`h-0.5 bg-gray-900 dark:bg-gray-100 transition-all duration-300 ${
+              className={`h-0.5 w-full bg-gray-700 dark:bg-white transition-all duration-300 ${
                 navigationOpen ? "rotate-45 translate-y-2" : ""
               }`}
-            ></span>
+            />
             <span
-              className={`h-0.5 bg-gray-900 dark:bg-gray-100 transition-all duration-300 ${
+              className={`h-0.5 w-full bg-gray-700 dark:bg-white transition-all duration-300 ${
                 navigationOpen ? "opacity-0" : ""
               }`}
-            ></span>
+            />
             <span
-              className={`h-0.5 bg-gray-900 dark:bg-gray-100 transition-all duration-300 ${
+              className={`h-0.5 w-full bg-gray-700 dark:bg-white transition-all duration-300 ${
                 navigationOpen ? "-rotate-45 -translate-y-2" : ""
               }`}
-            ></span>
+            />
           </button>
 
           {/* Navigation Menu */}
