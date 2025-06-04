@@ -7,7 +7,7 @@ interface Experience {
     title: string;
     startDate: string;
     endDate?: string;
-    description?: string[];
+    description?: string; // changed from string[] to string
   }[];
 }
 
@@ -30,15 +30,14 @@ const ExperienceTabItem = ({ experience }: { experience: Experience }) => {
             <div className="ml-3">
               <h4 className="text-lg font-semibold text-gray-800">{role.title}</h4>
               <p className="text-sm text-gray-500 mb-2">
-                {role.startDate} – {role.endDate || "Present"}
+                {role.startDate} – {role.endDate}
               </p>
 
               {role.description && (
-                <ul className="mt-2 list-disc pl-5 space-y-1 text-sm text-gray-600">
-                  {role.description.map((point, i) => (
-                    <li key={i}>{point}</li>
-                  ))}
-                </ul>
+                <div
+                  className="mb-2 max-w-3xl text-sm leading-relaxed text-gray-600 space-y-3 [&>ul]:list-disc [&>ul]:pl-5"
+                  dangerouslySetInnerHTML={{ __html: role.description }}
+                />
               )}
             </div>
           </div>
