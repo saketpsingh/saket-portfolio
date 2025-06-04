@@ -9,7 +9,8 @@ const technicalSkillsData: TechnicalSkills[] = [
       "Sitecore 9.3, 10.1, 10.2", 
       "SXA", 
       "Headless", 
-      "XM Cloud"
+      "XM Cloud",
+      "Helix Architecture"
     ],
   },
   {
@@ -21,8 +22,7 @@ const technicalSkillsData: TechnicalSkills[] = [
       "C#",
       "Web API",
       "LINQ",
-      "Entity Framework",
-      "Helix Architecture"
+      "Entity Framework"
     ],
   },
   {
@@ -62,10 +62,10 @@ const technicalSkillsData: TechnicalSkills[] = [
     title: "DevOps & Tools",
     description: [
       "Docker", 
-      "Azure DevOps", 
-      "Git", 
-      "Jira", 
-      "Tortoise SVN"
+      "Azure DevOps, Jira", 
+      "Git,", 
+      "Tortoise SVN", 
+      "PowerShell Scripting"
     ],
   },
   // {
