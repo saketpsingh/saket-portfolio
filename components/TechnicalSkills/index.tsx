@@ -7,8 +7,7 @@ const TechnicalSkills = () => {
   return (
     <section
       id="features"
-      className="bg-white text-black"
-      // Removed top/bottom padding to match DynamicSpacing style
+      className="bg-white text-black pb-8" // Added bottom padding
     >
       <div className="mx-auto max-w-screen-xl px-4 md:px-8 xl:px-0">
         <h2 className="text-3xl font-bold text-center uppercase py-6 md:py-8">
