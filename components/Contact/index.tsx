@@ -16,7 +16,7 @@ const Contact = () => {
               <h3 className="text-2xl font-semibold mt-6 mb-3 text-indigo-600">Get in Touch</h3>
               <ul className="space-y-2">
                 {Object.values(contactContent.contactInfo).map(({ label, emoji, value, href }) => (
-                  <li key={label} className="flex items-center space-x-2">
+                  <li key={label} className="flex flex-wrap items-center gap-x-2">
                     <strong>{label}:</strong>
                     <span aria-label={label} role="img">{emoji}</span>
                     <a

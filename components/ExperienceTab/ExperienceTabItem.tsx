@@ -1,3 +1,4 @@
+"use client";
 
 interface Experience {
   company: string;
@@ -13,25 +14,33 @@ interface Experience {
 const ExperienceTabItem = ({ experience }: { experience: Experience }) => {
   return (
     <div className="space-y-6">
-      <h3 className="text-xl font-semibold text-gray-800">
-        {experience.company}
-      </h3>
-      <p className="text-sm text-gray-600">{experience.location}</p>
-      <div className="space-y-4">
-        {experience.roles.map((role, idx) => (
-          <div key={idx} className="rounded-md border-l-4 border-blue-500 bg-white p-4 shadow-sm">
-            <h4 className="text-md font-semibold text-gray-700">{role.title}</h4>
-            <p className="text-sm text-gray-500">
-              {role.startDate} - {role.endDate || "Present"}
-            </p>
+      <div>
+        <h3 className="text-2xl font-bold text-gray-900">{experience.company}</h3>
+        <p className="text-sm text-gray-500">{experience.location}</p>
+      </div>
 
-            {role.description && (
-              <ul className="mt-2 list-disc list-inside text-sm text-gray-600 space-y-1">
-                {role.description.map((point, i) => (
-                  <li key={i}>{point}</li>
-                ))}
-              </ul>
-            )}
+      <div className="space-y-6">
+        {experience.roles.map((role, idx) => (
+          <div
+            key={idx}
+            className="relative overflow-hidden rounded-2xl border bg-white p-6 shadow-md transition hover:shadow-lg"
+          >
+            <span className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-blue-500 to-purple-500" />
+
+            <div className="ml-3">
+              <h4 className="text-lg font-semibold text-gray-800">{role.title}</h4>
+              <p className="text-sm text-gray-500 mb-2">
+                {role.startDate} – {role.endDate || "Present"}
+              </p>
+
+              {role.description && (
+                <ul className="mt-2 list-disc pl-5 space-y-1 text-sm text-gray-600">
+                  {role.description.map((point, i) => (
+                    <li key={i}>{point}</li>
+                  ))}
+                </ul>
+              )}
+            </div>
           </div>
         ))}
       </div>
