@@ -1,15 +1,15 @@
 // components/publicationData.ts
 const publicationData = [
     {
-      title: "Perficient Blogs",
-      image: "/images/publications/prft-icon.png",
-      link: "https://blogs.perficient.com/author/saketsingh/",
+      title: "Saket Singh's Blog",
+      image: "/images/publications/home-right.png",
+      link: "/blogs",
       buttonText: "View More",
     },
     {
-      title: "Saket Singh Blogs",
-      image: "/images/publications/home-right.png",
-      link: "/blog",
+      title: "Perficient Blogs",
+      image: "/images/publications/prft-icon.png",
+      link: "https://blogs.perficient.com/author/saketsingh/",
       buttonText: "View More",
     },
     {

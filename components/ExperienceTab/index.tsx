@@ -8,16 +8,17 @@ const ExperienceTab = () => {
   const [currentTab, setCurrentTab] = useState("tabOne");
 
   return (
-    <section className="relative bg-gradient-to-br from-purple-100 via-blue-100 to-white pb-12">
+    <section className="relative bg-[radial-gradient(ellipse_at_top_left,_#fdfbfb,_#ebedee,_#e3e6f3)] pb-12">
       <div className="relative mx-auto max-w-screen-xl px-4 md:px-8 2xl:px-0">
         {/* Heading */}
-        <div className="mb-12 pt-12 text-center">
-          <h2 className="text-4xl font-extrabold uppercase tracking-tight text-gray-900">
+        <div className="text-center mb-12 pt-6">
+          <h2 className="text-3xl font-bold text-center uppercase py-6 md:py-8 text-gray-900">
             Work Experience
           </h2>
-          <p className="mt-2 text-base text-gray-600">
+          <p className="text-base text-gray-600 max-w-2xl mx-auto -mt-4 mb-4">
             A journey of growth, collaboration, and impact.
           </p>
+          <div className="h-1 w-20 mx-auto bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full mt-4" />
         </div>
 
         {/* Tabs */}

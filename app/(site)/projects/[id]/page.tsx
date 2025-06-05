@@ -42,13 +42,20 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
         <div className="flex flex-col lg:flex-row items-start gap-10 p-8 sm:p-12">
           {/* Left Section: Content */}
           <div className="flex-[4] w-full">
-            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white tracking-tight mb-10">
-              {project.title}
-            </h2>
+            {/* Unified Heading */}
+            <div className="text-left mb-10">
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+                {project.title}
+              </h2>
+              <div className="h-1 w-20 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full mt-4" />
+            </div>
 
             {project.duration && (
               <div className="mb-4 font-semibold text-lg text-gray-900 dark:text-white">
-                Duration: <span className="text-indigo-600 dark:text-indigo-400 font-normal">{project.duration}</span>
+                Duration:{' '}
+                <span className="text-indigo-600 dark:text-indigo-400 font-normal">
+                  {project.duration}
+                </span>
               </div>
             )}
 

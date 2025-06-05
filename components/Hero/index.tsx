@@ -6,24 +6,23 @@ import HeroData from "./HeroData";
 
 const Hero = () => {
   return (
-    <section
-      className="pt-20 md:pt-16 pb-12 relative overflow-hidden bg-gradient-to-br from-white via-slate-100 to-slate-300"
-      style={{ marginTop: `calc(var(--header-height) + 0.5rem)` }}
-    >
+    <section className="pt-20 md:pt-16 pb-12 relative overflow-hidden bg-[radial-gradient(ellipse_at_top_left,_#fcfdff,_#f6f8fc,_#f0f3fa)]"
+      style={{ marginTop: `calc(var(--header-height) + 0.5rem)` }}>
+
       {/* Enhanced Modern Background */}
       <div aria-hidden="true" className="absolute inset-0 -z-10">
-        {/* Radial Glow */}
-        <div className="absolute top-1/4 left-1/3 w-[60vw] h-[60vw] bg-sky-100 opacity-40 rounded-full blur-[100px]" />
+        {/* Subtle Radial Light Glow */}
+        <div className="absolute top-1/4 left-1/4 w-[80vw] h-[80vw] bg-[#f0f4ff] opacity-20 rounded-full blur-[140px]" />
 
-        {/* Glass Panel Overlay */}
-        <div className="absolute inset-0 bg-white/30 backdrop-blur-md" />
+        {/* Gentle Light Veil */}
+        <div className="absolute inset-0 bg-white/40 backdrop-blur-sm" />
 
-        {/* Gradient Overlay for Extra Depth */}
-        <div className="absolute inset-0 bg-gradient-to-tr from-white/50 via-slate-100/60 to-white/20" />
+        {/* Diagonal Gradient for Depth */}
+        <div className="absolute inset-0 bg-gradient-to-br from-white/50 via-[#f8f9fb]/60 to-white/20" />
       </div>
 
       <div className="relative mx-auto max-w-c-1235 overflow-hidden px-6 md:px-10 2xl:px-0 z-10">
-        <div className="flex flex-col-reverse md:flex-row gap-12 lg:gap-20 items-stretch">
+        <div className="flex flex-col-reverse md:flex-row gap-12 lg:gap-20 items-stretch pb-2 md:pb-2">
           {/* Left Content */}
           <motion.div
             variants={{
@@ -41,7 +40,7 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                className="text-xl md:text-2xl font-semibold tracking-wide text-gray-600 mb-1"
+                className="text-base md:text-lg font-medium tracking-wide text-gray-500 mb-1"
               >
                 {HeroData.greeting}
               </motion.h1>
@@ -50,26 +49,25 @@ const Hero = () => {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
-                className="text-3xl md:text-4xl font-extrabold uppercase tracking-normal text-gray-900 drop-shadow-sm"
+                className="text-2xl uppercase md:text-3xl font-bold tracking-normal text-gray-900 drop-shadow-sm"
               >
                 {HeroData.name}
               </motion.h2>
             </div>
 
-            <h4 className="mb-6 text-2xl font-medium text-gray-700 tracking-wide">
+            <h4 className="mb-6 text-lg md:text-xl font-medium text-gray-700 tracking-wide">
               {HeroData.title}
             </h4>
 
             <div
-              className="mb-10 max-w-xl text-lg leading-relaxed text-gray-600 tracking-wide space-y-4"
+              className="mb-10 max-w-xl !text-base leading-relaxed !text-gray-600 tracking-wide rich-text"
               dangerouslySetInnerHTML={{ __html: HeroData.description }}
             />
-
             <a
               href={HeroData.ctaLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center rounded-full border-2 border-gray-700 bg-white px-7 py-3 text-lg font-semibold text-gray-900 shadow-md transition-all hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300"
+              className="inline-flex items-center rounded-full bg-gradient-to-r from-sky-400 to-fuchsia-500 px-7 py-3 text-lg font-semibold text-white shadow-[0_8px_24px_rgba(0,0,0,0.1)] transition-all duration-300 hover:scale-105 hover:shadow-[0_12px_32px_rgba(0,0,0,0.12)] focus:outline-none focus:ring-4 focus:ring-fuchsia-200/60"
             >
               {HeroData.ctaText}
               <svg

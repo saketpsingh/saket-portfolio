@@ -56,7 +56,7 @@ const Footer = () => {
           <ul className="space-y-1">
             <li>
               <Link href="/blogs" className="hover:text-white">
-                Saket Singh’s Blog
+                Saket Singh's Blog
               </Link>
             </li>
             <li>
