@@ -1,91 +1,148 @@
-# Solid - Free Next.js Web Template and Starter Kit for SaaS
+# 💼 Saket Singh — Personal Portfolio
 
-Solid is a free Next.js template specifically crafted for startups, SaaS, and software websites. It provides an extensive array of necessary sections, elements, and pages required to build a fully-equipped website for any SaaS, software, or startup site. Comes with all cutting edge React and Next.js features - **Built with Next.js 13, React 18 and TypeScript.**
+Welcome to the official source code of [Saket Singh's Portfolio](https://saket-portfolio-one.vercel.app/) - a modern, fast, and responsive personal website to showcase projects, professional experience, research publications, and more.
 
-This Next.js template's homepage comes with an awesome hero area, logos of associated brands, a features section, an about section, another features section with tabs, counters, and star ratings, integration options, clear call-to-actions, an FAQ section with accordions, a testimonials section, pricing tables, a contact page, a blog, and a distinctive footer.
+![image](https://github.com/user-attachments/assets/fbc52bc3-bc83-4b29-b186-b0f8666580d0)
 
-**Solid Next.js template packed with all necessary external pages** - such as login, registration, blog grids, and single blog pages, among others. This broad collection of pages provides all the necessary tools to create a feature-packed, comprehensive, and visually appealing website or landing page for software, a web application, or SaaS.
+---
 
-### [🔥 Get Solid Pro - Next.js SaaS Boilerplate and Starter Kit](https://nextjstemplates.com/templates/solid)
+## 🛠️ Tech Stack
 
-### [🚀 Solid PRO Live Demo](https://solid.nextjstemplates.com/)
+This project is built with a modern development stack optimized for performance and maintainability:
 
-### [🚀 Solid FREE Live Demo](https://solid-free.nextjstemplates.com/)
+- **Framework:** [Next.js 15.3.2](https://nextjs.org/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Animation:** [Framer Motion](https://www.framer.com/motion/)
+- **Icons:** [Lucide Icons](https://lucide.dev/)
+- **Routing:** Next.js App Router
+- **Image Optimization:** `next/image`
+- **Deployment:** [Vercel](https://vercel.com/)
 
-### Solid PRO vs Solid FREE Comparison 📊
+---
 
-#### [Solid PRO](https://solid.nextjstemplates.com/)
-- SaaS Boilerplate + Starter Kit with Essential Integrations and Functionalities
-- Essential Integrations: Auth, DB, Stripe, MDX and More ...
-- Fully Functional, Ready to Use Sanity Blog Support
-- Premium Email Support
-- Functional External Pages
-- Free Lifetime Future Updates
-___
-#### [Solid FREE](https://solid-free.nextjstemplates.com/)
-- Only UI - Coded for Next.js
-- No Integrations
-- No Functional Blogging System
-- External Pages without Functions/Integrations
-- Community Support
-- Free Lifetime Future Updates
-___
+## 📁 Folder Structure
 
-### [📦 Download](https://nextjstemplates.com/templates/solid)
-
-### [🔥 Get Pro](https://nextjstemplates.com/templates/solid)
-
-### [🔌 Documentation](https://nextjstemplates.com/docs)
-
-### ⚡ Deploy Now
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FNextJSTemplates%2Fsolid-nextjs)
-
-[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/NextJSTemplates/solid-nextjs)
-
-
-## Installation
-
-Here are the steps you need to follow to install the dependencies.
-
-1.Download and extract the template from **Next.js Templates.**
-
-2.**cd** into the template directory then run this command to install all the dependencies
-    
-```bash
-    npm install --legacy-peer-deps
 ```
-**Note:** As of right now React 19 causes peer dependencies issues with some packages, so the `legacy-peer-deps` flag is required.
+saket-portfolio/
+├── app/                     # App Router based pages
+│   ├── layout.js            # Root layout
+│   └── page.js              # Home page
+├── components/              # UI Components (Hero, Projects, Resume, etc.)
+├── public/                  # Static files (images, PDFs, favicon, etc.)
+├── styles/                  # Optional global CSS (if any)
+├── utils/                   # Data files and helpers
+├── tailwind.config.js       # Tailwind CSS configuration
+├── postcss.config.js        # PostCSS configuration
+├── next.config.js           # Next.js configuration
+└── package.json             # Project metadata and scripts
+```
 
-You can start the project on the local server
-    
+---
+
+## ✨ Features
+
+- ⚡ **Performance-first** using lazy loading and image optimization
+- 📱 **Responsive** across mobile, tablet, and desktop
+- 🧑‍💻 **Component-driven** development
+- 🖼️ **Animated UI** using Framer Motion
+- 📄 **Resume section** with embedded PDF viewer
+- 🧩 **Modular design** to easily customize content
+
+---
+
+## 🚀 Getting Started
+
+Follow the steps below to run the portfolio locally:
+
+### 1. Clone the Repository
+
 ```bash
-    npm run dev
- ```
+git clone https://github.com/saketpsingh/saket-portfolio.git
+cd saket-portfolio
+```
 
-It’ll start the template on [localhost:3000](http://localhost:3000). 
+### 2. Install Dependencies
 
-The documentation includes all the guides you need for the integrations. 
+```bash
+npm install
+# or
+yarn install
+```
 
+### 3. Start the Development Server
 
-### Deploying on PaaS
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-If you are using a GitHub repo then you can go with free-of-cost and easy-to-use options like [Vercel](https://vercel.com/), or [Netlify](https://netlify.com/) they offer decent-free tiers for Next.js hosting.
+Your app will be live at: [http://localhost:3000](http://localhost:3000)
 
-### 📄 License
-Solid Free is 100% free and open-source, feel free to use with your personal and commercial projects.
+---
 
-### 💜 Support
-If you like the template, please star this repository to inspire the team to create more stuff like this and reach more users like you!
+## 🔧 Customization
 
-### ✨ Browse and Download - Best Free [Next.js Templates](https://nextjstemplates.com/templates)
+You can personalize the portfolio by editing content in the following files:
 
-### Update Log
+| Section         | File Path                                       |
+|-----------------|--------------------------------------------------|
+| Hero Section    | `components/Hero/HeroData.js`                   |
+| Projects        | `components/Projects/ProjectsData.js`          |
+| Experience      | `components/Experience/ExperienceTabData.js`   |
+| Publications    | `components/Publications/PublicationData.js`   |
+| Resume PDF      | `public/resume.pdf` or any file you upload      |
 
-**10 April 2025**
-- Update eslint to v9.24.0 to resolve peer deps warning during installation.
-- Migrate to tailwind v4
+For images, add them to the `public/images` folder and update the respective image paths in your data/config files.
 
-**29 Jan 2025**
-- Upgraded to Next.js 15
-- Update framer-motion to v12.0.6 for React 19 support.
+---
+
+## 📦 Production Build
+
+To generate an optimized production build:
+
+```bash
+npm run build
+npm run start
+```
+
+---
+
+## 🧪 Linting & Formatting
+
+```bash
+npm run lint       # Check for lint issues
+npm run format     # Prettier formatting (if configured)
+```
+
+---
+
+## 🌐 Deployment
+
+This project is deployed via **Vercel**. To deploy:
+
+1. Push your code to a GitHub repository
+2. Visit [vercel.com](https://vercel.com)
+3. Import the repository
+4. Configure build settings if needed (default should work)
+5. Deploy 🚀
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](https://github.com/saketpsingh/saket-portfolio/blob/main/LICENSE).
+
+---
+
+## 👤 Author
+
+**Saket Singh**
+
+- Portfolio: [saketpsingh.vercel.app](https://saketpsingh.vercel.app/)
+- GitHub: [@saketpsingh](https://github.com/saketpsingh)
+- LinkedIn: [linkedin.com/in/saketpsingh](https://linkedin.com/in/saketpsingh)
+
+---
+
+> Built with Next.js, styled with Tailwind, animated with Framer Motion — deployed to the world with Vercel 🌍.
