@@ -17,12 +17,8 @@ const ProfileSidebar = () => {
           priority
         />
       </div>
-      <div className="text-gray-700 text-base leading-relaxed max-w-xs">
-        {/* If ProfileContent is a string: */}
-        {ProfileContent}
-
-        {/* If ProfileContent is HTML, use dangerouslySetInnerHTML */}
-        {/* <div dangerouslySetInnerHTML={{ __html: ProfileContent }} /> */}
+      <div className="!text-gray-700 !text-base leading-relaxed rich-text">
+        <div dangerouslySetInnerHTML={{ __html: ProfileContent }} />
       </div>
     </aside>
   );

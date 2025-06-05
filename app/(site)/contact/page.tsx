@@ -4,7 +4,7 @@ import ContactItems from "@/components/Contact";
 
 export const metadata: Metadata = {
   title: "Contact | Saket Singh",
-  description: "Learn more about Solid SaaS Boilerplate and its purpose.",
+  description: "Get in touch with Saket Singh for collaborations, opportunities, or inquiries related to development and technology.",
 };
 
 export default function ContactPage() {

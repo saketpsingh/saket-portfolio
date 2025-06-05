@@ -4,7 +4,7 @@ import AboutItems from "@/components/About";
 
 export const metadata: Metadata = {
   title: "About | Saket Singh",
-  description: "Learn more about Solid SaaS Boilerplate and its purpose.",
+  description: "Learn more about Saket Singh, his journey as a developer, technical background, passions, and career highlights.",
 };
 
 export default function AboutPage() {

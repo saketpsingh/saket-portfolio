@@ -39,8 +39,8 @@ const Footer = () => {
           <h4 className="text-lg font-semibold text-white mb-3">Navigate</h4>
           <ul className="space-y-1">
             <li><Link href="/" className="hover:text-white">Home</Link></li>
-            <li><Link href="/about" className="hover:text-white">About</Link></li>
             <li><Link href="/projects" className="hover:text-white">Projects</Link></li>
+            <li><Link href="/about" className="hover:text-white">About</Link></li>
             <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
           </ul>
         </motion.div>
@@ -55,6 +55,11 @@ const Footer = () => {
           <h4 className="text-lg font-semibold text-white mb-3">Publications</h4>
           <ul className="space-y-1">
             <li>
+              <Link href="/blogs" className="hover:text-white">
+                Saket Singh’s Blog
+              </Link>
+            </li>
+            <li>
               <a
                 href="https://blogs.perficient.com/author/saketsingh/"
                 className="hover:text-white transition-colors"
@@ -63,11 +68,7 @@ const Footer = () => {
                 Perficient Blogs
               </a>
             </li>
-            <li>
-              <Link href="/publications/blogs" className="hover:text-white">
-                Saket Singh Blogs
-              </Link>
-            </li>
+
             <li>
               <a
                 href="https://github.com/saketpsingh"

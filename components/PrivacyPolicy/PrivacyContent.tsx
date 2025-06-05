@@ -34,8 +34,8 @@ const PrivacyContent = `
 
   <h3 class="text-xl font-semibold mt-8 mb-4">6. Third-Party Services</h3>
   <ul class="list-disc list-inside space-y-2">
-    <li><strong>Google Analytics</strong> – For usage insights</li>
-    <li><strong>Vercel</strong> – For hosting and deployment</li>
+    <li><strong>Google Analytics</strong> - For usage insights</li>
+    <li><strong>Vercel</strong> - For hosting and deployment</li>
   </ul>
 
   <h3 class="text-xl font-semibold mt-8 mb-4">7. Data Protection and Security</h3>
@@ -44,7 +44,7 @@ const PrivacyContent = `
   <h3 class="text-xl font-semibold mt-8 mb-4">8. Your Rights</h3>
   <p>You have the right to request access, correction, deletion of your data, or withdraw consent. To exercise your rights, contact me at the email below.</p>
 
-  <h3 class="text-xl font-semibold mt-8 mb-4">9. Children’s Privacy</h3>
+  <h3 class="text-xl font-semibold mt-8 mb-4">9. Children's Privacy</h3>
   <p>This Website is not intended for children under 18. No data is knowingly collected from minors.</p>
 
   <h3 class="text-xl font-semibold mt-8 mb-4">10. International Users</h3>

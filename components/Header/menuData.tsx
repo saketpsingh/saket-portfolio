@@ -3,40 +3,40 @@ import { Menu } from "@/types/menu";
 const menuData: Menu[] = [
   {
     id: 1,
-    title: "Blogs",
+    title: "Home",
     newTab: false,
-    path: "/blog",
+    path: "/",
   },
   {
     id: 2,
-    title: "About",
+    title: "Projects",
+    newTab: false,
+    path: "/projects",
+  },
+  {
+    id: 3,
+    title: "Blogs ",
+    newTab: false,
+    path: "/blogs",
+  },
+  {
+    id: 4,
+    title: "About ",
     newTab: false,
     path: "/about",
   },
   {
-    id: 3,
-    title: "Contact",
-    newTab: false,
-    path: "/contact",
-  },
-  {
-    id: 4,
-    title: "Resume",
+    id: 5,
+    title: "Resume ",
     newTab: false,
     path: "/resume",
   },
   {
     id: 5,
-    title: "Privacy Policy",
+    title: "Contact  ",
     newTab: false,
-    path: "/privacy-policy",
+    path: "/contact",
   },
-  // {
-  //   id: 2.3,
-  //   title: "Docs",
-  //   newTab: false,
-  //   path: "/docs",
-  // },
 ];
 
 export default menuData;

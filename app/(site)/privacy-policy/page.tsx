@@ -4,7 +4,7 @@ import PrivacyPolicy from "@/components/PrivacyPolicy";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | Saket Singh",
-  description: "Learn more about Solid SaaS Boilerplate and its purpose.",
+  description: "Review the privacy policy for Saket Singh's portfolio, outlining how user data is collected, used, and protected.",
 };
 
 export default function PrivacyPage() {

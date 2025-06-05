@@ -2,10 +2,8 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Error Page - Solid SaaS Boilerplate",
-
-  // other metadata
-  description: "This is Error page for Solid Pro"
+  title: "Page Not Found | Saket Singh",
+  description: "The page you're looking for doesn't exist. Return to Saket Singh's portfolio to continue exploring his work and achievements."
 };
 
 const ErroPage = () => {

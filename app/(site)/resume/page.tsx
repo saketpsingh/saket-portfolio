@@ -3,7 +3,7 @@ import ResumePage from '@/components/PdfViewer/ResumePage';
 
 export const metadata = {
   title: "Resume | Saket Singh",
-  description: "This is Error page for Solid Pro",
+  description: "View Saket Singh's professional resume showcasing skills, experience, education, and technical proficiencies.",
 };
 
 export default function Resume() {
