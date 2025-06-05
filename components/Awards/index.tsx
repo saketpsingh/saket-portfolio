@@ -23,8 +23,8 @@ const Awards = () => {
     : awardsData.slice(0, isMobile ? 3 : 6);
 
   return (
-    <section className="relative w-full py-10 sm:py-12 bg-gradient-to-br from-blue-50 to-white">
-      <div className="relative z-10 mx-auto max-w-6xl rounded-3xl bg-white py-8 sm:py-10 px-4 sm:px-6 shadow-2xl lg:px-16">
+    <section className="relative w-full pt-6 sm:pt-8 pb-10 sm:pb-12 bg-[radial-gradient(ellipse_at_top_left,_#fdfbfb,_#f3f6fd,_#e4e9f7,_#dee4f1)]">
+      <div className="relative z-10 mx-auto max-w-6xl rounded-3xl bg-white/80 backdrop-blur-md border border-white/30 pt-0 sm:pt-2 pb-4 sm:pb-10 px-4 sm:px-6 shadow-xl lg:px-16">
         {/* Heading */}
         <motion.div
           variants={{ hidden: { opacity: 0, y: -20 }, visible: { opacity: 1, y: 0 } }}
@@ -32,14 +32,15 @@ const Awards = () => {
           whileInView="visible"
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-8 sm:mb-12"
+          className="text-center mb-12"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-gray-800 uppercase">
+          <h2 className="text-3xl font-bold text-center uppercase py-6 md:py-8 text-gray-900">
             Awards & Recognition
           </h2>
-          <p className="mt-1 sm:mt-2 text-gray-500 text-sm sm:text-base">
+          <p className="text-base text-gray-600 max-w-2xl mx-auto -mt-4 mb-4">
             Celebrating milestones and excellence
           </p>
+          <div className="h-1 w-20 mx-auto bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full mt-4" />
         </motion.div>
 
         {/* Content */}

@@ -20,8 +20,8 @@ const ResumePage = () => {
         transition={{ duration: 0.6, ease: 'easeOut' }}
         className="w-full max-w-5xl bg-white/90 backdrop-blur-md rounded-3xl shadow-2xl border border-gray-300/40 overflow-hidden"
       >
-        {/* Sticky Header with Download Button */}
-        <header className="sticky top-0 bg-white/90 backdrop-blur-md border-b border-gray-300/40 px-8 py-5 flex justify-between items-center z-10 rounded-t-3xl">
+        {/* Sticky Header with Title and Download Button */}
+        <header className="sticky top-0 bg-white/90 backdrop-blur-md border-b border-gray-300/40 px-8 py-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 z-10 rounded-t-3xl">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-indigo-700">
             Saket Singh's Resume
           </h2>
@@ -39,12 +39,6 @@ const ResumePage = () => {
         <section className="p-6 sm:p-10 h-[80vh] border border-gray-200 bg-white shadow-inner overflow-auto">
           <PdfViewer fileUrl="/documents/Saket_Singh_Resume.pdf" />
         </section>
-        {/* <section
-          className="p-6 sm:p-10 h-[80vh] border border-gray-200 bg-white shadow-inner overflow-auto"
-          suppressHydrationWarning={true}
-        >
-          <PdfViewer fileUrl="/documents/Saket_Singh_Resume.pdf" />
-        </section> */}
 
         {/* Bottom Download Button */}
         <footer className="px-8 py-6 flex justify-center border-t border-gray-200 bg-white">

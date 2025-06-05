@@ -63,34 +63,10 @@ const technicalSkillsData: TechnicalSkills[] = [
     description: [
       "Docker", 
       "Azure DevOps, Jira", 
-      "Git,", 
-      "Tortoise SVN", 
+      "Git, Tortoise SVN", 
       "PowerShell Scripting"
     ],
   },
-  // {
-  //   id: 7,
-  //   icon: "/images/icon/icon-06.svg",
-  //   title: "Practices",
-  //   description: [
-  //     "Agile Methodology",
-  //     "Prototyping",
-  //     "Test-Driven Development (TDD)",
-  //     "Sprint Planning"
-  //   ],
-  // },
-  // {
-  //   id: 8,
-  //   icon: "/images/icon/icon-06.svg",
-  //   title: "Others",
-  //   description: [
-  //     "SEO",
-  //     "Web Performance Optimization",
-  //     "Accessibility",
-  //     "Clean Architecture",
-  //     "Cross-Team Collaboration",
-  //   ],
-  // },
 ];
 
 export default technicalSkillsData;
