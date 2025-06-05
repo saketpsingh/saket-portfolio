@@ -142,6 +142,7 @@ This project is licensed under the [MIT License](https://github.com/saketpsingh/
 - Portfolio: [saketpsingh.vercel.app](https://saketpsingh.vercel.app/)
 - GitHub: [@saketpsingh](https://github.com/saketpsingh)
 - LinkedIn: [linkedin.com/in/saketpsingh](https://linkedin.com/in/saketpsingh)
+- Email: [codingwithsaket@gmail.com](codingwithsaket@gmail.com)
 
 ---
 
