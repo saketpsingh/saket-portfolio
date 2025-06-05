@@ -1,4 +1,4 @@
-# 💼 Saket Singh — Personal Portfolio
+# 💼 Saket Singh - Personal Portfolio
 
 Welcome to the official source code of [Saket Singh's Portfolio](https://saket-portfolio-one.vercel.app/) - a modern, fast, and responsive personal website to showcase projects, professional experience, research publications, and more.
 
