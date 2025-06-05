@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
         <div className="bg-white rounded-3xl shadow-2xl p-10 sm:p-12 transition hover:shadow-3xl flex flex-col md:flex-row gap-10">
 
           {/* Content */}
-          <div className="md:flex-grow md:basis-2/3 text-gray-700 text-base leading-relaxed space-y-5 [&_p]:mb-4">
+          <div className="md:flex-grow md:basis-2/3 !text-gray-700 !text-base leading-relaxed rich-text">
             <div dangerouslySetInnerHTML={{ __html: PrivacyContent }} />
           </div>
 

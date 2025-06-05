@@ -8,7 +8,7 @@ const AboutMe = () => {
         <div className="bg-white rounded-3xl shadow-2xl p-10 sm:p-12 transition hover:shadow-3xl flex flex-col md:flex-row gap-10">
 
           {/* About Me Content - takes 2/3 width on medium+ screens */}
-          <div className="md:flex-2 text-gray-700 text-base leading-relaxed space-y-5 [&_p]:mb-4">
+          <div className="md:flex-2 !text-gray-700 !text-base rich-text">
             <div dangerouslySetInnerHTML={{ __html: AboutMeContent }} />
           </div>
 
