@@ -6,6 +6,8 @@ keywords: testing-blogs
 metaDescription: testing-blogs
 slug: testing-blogs
 date: 2025-06-14T13:14:39.466Z
+tags:
+  - tag: sitecore
 coverImage: /uploads/manufacturing_commercial.png
 ---
 ## What is Lorem Ipsum?
